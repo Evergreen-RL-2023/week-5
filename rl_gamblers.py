@@ -9,7 +9,7 @@ implement uniform random policy
 import numpy as np
 import random as rnd
 
-N = 5   #grid size
+N = 100
 
 
 class Agent(object):
@@ -18,8 +18,8 @@ class Agent(object):
         initialize the state
     '''
     def __init__(self):
-        self.state = 50
-        self.values = np.zeros(100)
+        self.state = N/2
+        self.values = np.zeros(N)
 
         
     def set_state(self, s):
